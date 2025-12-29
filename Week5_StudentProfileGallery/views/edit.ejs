@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <h1 class="title">Edit Student Profile</h1>
+    
+    <div style="text-align: center;">
+        <!-- UPDATED LINK: Points to /gallery instead of / -->
+        <a class="back" href="/gallery">← Back to Gallery</a>
+    </div>
+
+    <form class="form" action="/edit/<%= student._id %>" method="POST">
+        
+        <label for="name">Student Name:</label>
+        <input type="text" name="name" id="name" value="<%= student.name %>" required>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" value="<%= student.age %>" required>
+
+        <label for="course">Course:</label>
+        <input type="text" name="course" id="course" value="<%= student.course %>" required>
+
+        <label for="photo">Photo URL:</label>
+        <input type="text" name="photo" id="photo" value="<%= student.photo %>" required>
+
+        <button class="btn" style="width: 100%; cursor: pointer;" type="submit">Update Student</button>
+    </form>
+
+</body>
+</html>

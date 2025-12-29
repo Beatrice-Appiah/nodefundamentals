@@ -1,0 +1,22 @@
+{
+  "name": "week6_student-manger-api",
+  "version": "1.0.0",
+  "description": "1.  Introduction to restful API's\r Restful API is a backend service that allows application communicates with each other over the internet using HTTP protocols. It is based on representational state transfer (REST) architecture, which uses standard HTTP methods such as GET, POST, PUT, DELETE to perform operations on resources.\r Returns data usually in JSON",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.0.2",
+    "nodemon": "^3.1.11"
+  }
+}
