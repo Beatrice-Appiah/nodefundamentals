@@ -6,4 +6,4 @@ const add=(a,b) =>{
 const multiply=(a,b) => {
     return a * b
 }
-export {add, multiply};
+export {addition, multiply};
